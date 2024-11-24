@@ -65,10 +65,8 @@ def dashboard():
     #ages = [43,50,67]
     
     for person in query:
-        per = {person.name}
-        personas.append(per)
-        ag = {person.age}
-        ages.append(ag)
+        personas.append(person.name)
+        ages.append(person.age)
 
     return personas, ages
 
