@@ -33,7 +33,7 @@ persona.db.init_app(app)
 def index():
     try:
         # Imprimir los distintos endopoints disponibles
-        result = "<h1>Bienvenido!! Jesús González</h1>"
+        result = "<h1>Bienvenido!! Mayra Cruz</h1>"
         result += "<h2>Endpoints disponibles:</h2>"
         result += "<h2>Ejercicio Nº1:</h2>"
         result += "<h3>[GET] /personas?limit=[]&offset=[] --> mostrar el listado de personas (limite and offset are optional)</h3>"
@@ -137,7 +137,7 @@ def before_first_request_func():
 
 
 if __name__ == '__main__':
-    print('JMRG@Server start!')
+    print('MABC@Servidor iniciado!')
 
     # Lanzar server
     app.run(host="127.0.0.1", port=5000)
