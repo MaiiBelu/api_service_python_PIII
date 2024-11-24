@@ -27,8 +27,14 @@ def graficar(x, y):
         Crear el grafico que se desea mostrar en HTML
     '''
     fig, ax = plt.subplots(figsize=(16, 9))
+    fig.suptitle('Comparativa de edades', fontsize=18)
     ax.plot(x, y)
-    ax.get_xaxis().set_visible(False)
+    ax.plot(y, c='blue', marker='o')
+    ax.set_xlabel('Personas')
+    ax.set_ylabel('Edad')
+    ax.set_facecolor('whitesmoke')
+
+    #ax.get_xaxis().set_visible(False)
 
     # Convertir ese grafico en una imagen para enviar por HTTP
     # y mostrar en el HTML
